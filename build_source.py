@@ -121,7 +121,7 @@ html = html.replace('25 residences', '28 residences')
 # Title
 html = re.sub(r'<title>.*?</title>', '<title>Aura Crest Residences — Contemporary Himalayan Residences in Dharamkot</title>', html)
 
-with open('/root/dreamheights-source/index.html', 'w', encoding='utf-8') as out:
+with open('/root/auracrest-source/index.html', 'w', encoding='utf-8') as out:
     out.write(html)
 
-print('✓ Successfully generated /root/dreamheights-source/index.html!')
+print('✓ Successfully generated /root/auracrest-source/index.html!')

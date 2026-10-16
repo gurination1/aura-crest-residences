@@ -14,9 +14,9 @@
   <text x="240" y="85" class="hub-title">RING ROAD</text>
   <text x="240" y="99" class="hub-time">2 MIN</text>
 
-  <!-- Dream Heights Flagship -->
+  <!-- Aura Crest Flagship -->
   <rect x="340" y="24" width="200" height="26" rx="4" class="hub-badge" />
-  <text x="440" y="41" class="hub-flagship">★ DREAM HEIGHTS</text>
+  <text x="440" y="41" class="hub-flagship">★ AURA CREST</text>
   <text x="440" y="56" class="hub-time">GATEWAY</text>
 
   <!-- City Center Mall -->

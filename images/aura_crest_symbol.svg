@@ -1,0 +1,26 @@
+<svg viewBox="0 0 120 120" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Aura Crest Architectural Colonnade & Peak Symbol -->
+  <!-- Left Pillar (Terraced Ridge) -->
+  <polygon points="24,102 24,56 36,48 36,102" fill="#B2CAD8" />
+  <polygon points="36,102 36,48 44,52 44,102" fill="#6FA8B6" />
+  
+  <!-- Center Monolith (Dhauladhar Apex Crest) -->
+  <polygon points="48,102 48,26 60,16 60,102" fill="#D9E8EC" />
+  <polygon points="60,16 72,26 72,102 60,102" fill="#2A5B72" />
+
+  <!-- Right Pillar (Eastern Ridge) -->
+  <polygon points="76,102 76,52 84,48 84,102" fill="#3B7D96" />
+  <polygon points="84,102 84,48 96,56 96,102" fill="#1B243B" />
+
+  <!-- Architectural Glazing Ribs (Faceted Louvers) -->
+  <line x1="30" y1="64" x2="30" y2="96" stroke="#ffffff" stroke-width="1" stroke-opacity="0.4" />
+  <line x1="54" y1="38" x2="54" y2="96" stroke="#ffffff" stroke-width="1.2" stroke-opacity="0.5" />
+  <line x1="66" y1="38" x2="66" y2="96" stroke="#ffffff" stroke-width="1.2" stroke-opacity="0.2" />
+  <line x1="90" y1="64" x2="90" y2="96" stroke="#ffffff" stroke-width="1" stroke-opacity="0.2" />
+
+  <!-- Plinth Foundation Beam -->
+  <rect x="20" y="104" width="80" height="3.5" rx="1" fill="#1B243B" />
+
+  <!-- Zenith Apex Diamond (Himalayan Dawn Accent) -->
+  <polygon points="60,6 63.5,11 60,16 56.5,11" fill="#D4A853" />
+</svg>

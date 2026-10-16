@@ -1,6 +1,6 @@
 /**
- * 1:1 Implementation of ReGGae Canvas Cursor (Jesper Landberg - NXqjpo)
- * Enhanced with 120fps Physics, GSAP Blooming & Ultra-Smooth UI Kinematics
+ * Aura Crest Custom Canvas Cursor
+ * 120fps Dynamic Exponential Decay Kinematics & Subpixel Tracking
  *
  * Smooth UI Capabilities:
  * - Hidden on fresh load / reload (zero ghost circle at center)
@@ -22,7 +22,7 @@
     if (!canvas) {
       canvas = document.createElement('canvas');
       canvas.id = 'cursor-canvas';
-      canvas.className = 'reggae-cursor-canvas js-canvas';
+      canvas.className = 'aura-cursor-canvas js-canvas';
       document.body.appendChild(canvas);
     }
 
@@ -54,9 +54,9 @@
     const circle = {
       x: -200,
       y: -200,
-      radius: 10,
-      baseRadius: 10,
-      hoverRadius: 30,
+      radius: 9.5,
+      baseRadius: 9.5,
+      hoverRadius: 28.5,
       scale: 0
     };
 
@@ -230,7 +230,7 @@
       ctx.clearRect(0, 0, width, height);
         // Silky exponential decay dampening
         // 14.0 factor creates the signature fluid Awwwards trailing glide without micro-jitters
-        const factor = 1 - Math.exp(-14.0 * dt);
+        const factor = 1 - Math.exp(-13.6 * dt);
         
         const dx = mouseX - circle.x;
         const dy = mouseY - circle.y;
@@ -257,7 +257,7 @@
     }
 
     requestAnimationFrame(render);
-    window.__reggaeCursor = { circle, render, isVisible: () => isVisible, setHover };
+    window.__auraCursor = { circle, render, isVisible: () => isVisible, setHover };
   }
 
   if (document.readyState === 'loading') {

@@ -1,0 +1,17 @@
+debug_screens/
+verify_bathinda_site.py
+capture_orig.py
+*.log
+.vercel
+*.orig
+flower-lab.html
+images/*_clean.png
+images/*_cutout.png
+videos/*-loop.*
+videos/gemini_*
+videos/bougainvillea-flowers_01_rev.*
+videos/bougainvillea-flowers_06_rev.*
+videos/*_rev.avif
+videos/*_rev.png
+scratch/
+font-lab.html

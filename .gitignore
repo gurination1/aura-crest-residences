@@ -38,3 +38,7 @@ videos/*.txt
 videos/lotus_raw/
 videos/page*.html
 capture_all_flowers.js
+videos/snap_mob_*.png
+videos/final_mob_*.png
+videos/gh_pages_live.png
+videos/final_desk_*.png

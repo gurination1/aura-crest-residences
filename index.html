@@ -1,4 +1,4 @@
-<!DOCTYPE html><html    lang="en"><head><meta charset="utf-8"/><title>Aura Crest — Contemporary Himalayan Residences in Dharamkot</title><meta content="Boutique architectural residences combining contemporary timber, stone masonry, and high-altitude living in Dharamkot, Himachal Pradesh." name="description"/><meta content="Aura Crest — Contemporary Himalayan Residences in Dharamkot" property="og:title"/><meta content="Boutique architectural residences combining contemporary timber, stone masonry, and high-altitude living in Dharamkot, Himachal Pradesh." property="og:description"/><meta content="/images/auracrest_hero_1920x1728.jpg" property="og:image"/><meta content="Aura Crest — Contemporary Himalayan Residences in Dharamkot" name="twitter:title"/><meta content="Boutique architectural residences combining contemporary timber, stone masonry, and high-altitude living in Dharamkot, Himachal Pradesh." name="twitter:description"/><meta content="/images/auracrest_hero_1920x1728.jpg" name="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><script type="application/ld+json">
+<!DOCTYPE html><html    lang="en"><head><meta charset="utf-8"/><link rel="icon" href="./favicon.ico"/><link rel="icon" type="image/svg+xml" href="./favicon.svg"/><title>Aura Crest — Contemporary Himalayan Residences in Dharamkot</title><meta content="Boutique architectural residences combining contemporary timber, stone masonry, and high-altitude living in Dharamkot, Himachal Pradesh." name="description"/><meta content="Aura Crest — Contemporary Himalayan Residences in Dharamkot" property="og:title"/><meta content="Boutique architectural residences combining contemporary timber, stone masonry, and high-altitude living in Dharamkot, Himachal Pradesh." property="og:description"/><meta content="./images/auracrest_hero_1920x1728.jpg" property="og:image"/><meta content="Aura Crest — Contemporary Himalayan Residences in Dharamkot" name="twitter:title"/><meta content="Boutique architectural residences combining contemporary timber, stone masonry, and high-altitude living in Dharamkot, Himachal Pradesh." name="twitter:description"/><meta content="./images/auracrest_hero_1920x1728.jpg" name="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -106,10 +106,10 @@
     ],
     "telephone": "+91 90411 72159",
     "image": [
-      "/images/auracrest_hero_1920x1728.jpg",
-      "/images/01_grand_gate_opt.jpg",
-      "/images/04_luxury_living.jpg",
-      "/images/04_auracrest_opt.jpg"
+      "./images/auracrest_hero_1920x1728.jpg",
+      "./images/01_grand_gate_opt.jpg",
+      "./images/04_luxury_living.jpg",
+      "./images/04_auracrest_opt.jpg"
     ]
   }
 }
@@ -379,16 +379,57 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     bottom: auto !important;
   }
 
+  /* Section 4 desktop: grand presence for sanctuary title */
+  .loc-path-s_title h2 {
+    font-size: clamp(3.2rem, 4.5vw, 5.5rem) !important;
+    line-height: 1.15 !important;
+    text-align: center !important;
+  }
+
   @media screen and (max-width: 991px) {
-    /* Sanctuary Title Clamping: prevents awkward SANCTUAR / Y line escape */
+    /* Section 3: loc-intro-s clean luxury headline on mobile */
+    .loc-intro-s .grid {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      text-align: center !important;
+    }
+    .loc-intro-s_cap {
+      width: 100% !important;
+      margin-bottom: 0.5rem !important;
+      text-align: center !important;
+    }
+    .loc-intro-s_cap h4,
+    .loc-intro-s_cap .c1 {
+      font-size: 13px !important;
+      letter-spacing: 0.25em !important;
+      text-align: center !important;
+      display: block !important;
+    }
+    .loc-intro-s_title {
+      width: 100% !important;
+      margin-bottom: 1.5rem !important;
+      text-align: center !important;
+    }
     .loc-intro-s_title .h1,
+    .loc-intro-s_title h3,
     .loc-intro-s_title .loc-intro-s_title_line {
-      white-space: nowrap !important;
-      font-size: clamp(2.2rem, 10vw, 3.6rem) !important;
-      line-height: 0.95 !important;
-      word-break: keep-all !important;
-      overflow-wrap: normal !important;
-      hyphens: none !important;
+      font-size: clamp(30px, 8.5vw, 46px) !important;
+      line-height: 1.15 !important;
+      text-align: center !important;
+      white-space: normal !important;
+      word-break: normal !important;
+      margin-left: 0 !important;
+      display: block !important;
+    }
+    .loc-intro-s_img {
+      width: 100% !important;
+      max-width: 360px !important;
+      margin: 0 auto 1.5rem auto !important;
+    }
+    .loc-intro-s_desc {
+      width: 100% !important;
+      text-align: center !important;
     }
 
     /* Hemispherical dome arch on mobile */
@@ -418,45 +459,108 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
       height: 25vh !important;
     }
 
-    /* Clean spacing for .arch-s, .other-s, .cta-s */
+    /* Architecture section: adequate top padding to prevent fixed Logo/Menu collision */
     .arch-s {
       aspect-ratio: auto !important;
       min-height: auto !important;
-      padding-bottom: 2rem !important;
+      padding-top: 6rem !important;
+      padding-bottom: 2.5rem !important;
+    }
+    .arch-s_t h2 {
+      font-size: clamp(32px, 8.5vw, 52px) !important;
+      line-height: 1.1 !important;
+      letter-spacing: -0.02em !important;
+    }
+    .interior-s {
+      padding-top: 4rem !important;
     }
     .other-s {
-      padding-top: 2rem !important;
-      padding-bottom: 3rem !important;
+      padding-top: 2.5rem !important;
+      padding-bottom: 3.5rem !important;
     }
     .cta-s {
-      padding-top: 3rem !important;
-      padding-bottom: 4rem !important;
+      padding-top: 3.5rem !important;
+      padding-bottom: 4.5rem !important;
     }
 
-    /* Sanctuary title responsive typography */
+    /* Sanctuary title responsive typography: prominent, grand, legible */
+    .loc-path-s_title {
+      width: 100% !important;
+      text-align: center !important;
+      padding: 0 1rem !important;
+    }
     .loc-path-s_title h2 {
-      font-size: clamp(1.8rem, 6vw, 2.6rem) !important;
-      line-height: 1.15 !important;
+      font-size: clamp(26px, 7.5vw, 38px) !important;
+      line-height: 1.25 !important;
+      text-align: center !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
     }
     .loc-path-s_title_line {
       display: block !important;
+      letter-spacing: -0.02em !important;
+      font-size: inherit !important;
     }
     .loc-path-s_title_a.a2 {
-      display: inline-block !important;
+      display: block !important;
+      font-family: var(--_fonts---font-accent) !important;
+      font-size: clamp(36px, 10.5vw, 54px) !important;
+      line-height: 1.05 !important;
       margin: 0.15em 0 !important;
-      transform: rotate(-8deg) !important;
-      font-size: clamp(2rem, 6.5vw, 3.6rem) !important;
+      transform: rotate(-5deg) !important;
+      color: #D4A853 !important;
+      text-transform: lowercase !important;
     }
 
-    /* Prominent & lush mobile flowers */
+    /* Flowers on mobile: sized down and tucked into padding corners so they NEVER overlap center headlines */
     .flower {
-      width: 210px !important;
-      height: 210px !important;
-      max-width: 55vw !important;
-      max-height: 55vw !important;
-      opacity: 0.95 !important;
+      width: 110px !important;
+      height: 110px !important;
+      max-width: 32vw !important;
+      max-height: 32vw !important;
+      opacity: 0.75 !important;
       z-index: 0 !important;
+      pointer-events: none !important;
       overflow: visible !important;
+    }
+    .flower.other {
+      top: -20px !important;
+      right: -10px !important;
+      left: auto !important;
+      bottom: auto !important;
+    }
+    .flower.loc-intro {
+      bottom: -15px !important;
+      left: -10px !important;
+    }
+    .flower.loc-path {
+      top: -20px !important;
+      right: -10px !important;
+    }
+
+    /* Footer phone number: single centered line, zero clipping */
+    .contact-cms .h2 {
+      font-size: clamp(22px, 6vw, 34px) !important;
+      line-height: 1.2 !important;
+      white-space: nowrap !important;
+      text-align: center !important;
+      letter-spacing: 0.05em !important;
+      width: 100% !important;
+      display: block !important;
+    }
+    .footer-s {
+      padding-top: 2.5rem !important;
+      padding-bottom: 4rem !important;
+      text-align: center !important;
+    }
+    .footer-s_address, .footer-s_info, .footer-s_credits {
+      text-align: center !important;
+      justify-content: center !important;
+    }
+    .footer-s_address .nav-item_label_text div {
+      text-align: center !important;
     }
     .lotus-cluster {
       transform: scale(1.08) !important;
@@ -631,56 +735,56 @@ $$$$$$$$$$                    /////////          �
     <style>
       @font-face {
         font-family: 'ambroise-francois-std';
-        src: url('/fonts/dh-display.woff2') format('woff2'), url('/fonts/dh-display.woff') format('woff');
+        src: url('./fonts/dh-display.woff2') format('woff2'), url('./fonts/dh-display.woff') format('woff');
         font-weight: 400;
         font-style: normal;
         font-display: swap;
       }
       @font-face {
         font-family: 'Ambroise Std Francois';
-        src: url('/fonts/dh-display.woff2') format('woff2'), url('/fonts/dh-display.woff') format('woff');
+        src: url('./fonts/dh-display.woff2') format('woff2'), url('./fonts/dh-display.woff') format('woff');
         font-weight: 400;
         font-style: normal;
         font-display: swap;
       }
       @font-face {
         font-family: 'sloop-script-three';
-        src: url('/fonts/dh-accent.woff2') format('woff2'), url('/fonts/dh-accent.woff') format('woff');
+        src: url('./fonts/dh-accent.woff2') format('woff2'), url('./fonts/dh-accent.woff') format('woff');
         font-weight: 400;
         font-style: normal;
         font-display: swap;
       }
       @font-face {
         font-family: 'SloopScriptThree';
-        src: url('/fonts/dh-accent.woff2') format('woff2'), url('/fonts/dh-accent.woff') format('woff');
+        src: url('./fonts/dh-accent.woff2') format('woff2'), url('./fonts/dh-accent.woff') format('woff');
         font-weight: 400;
         font-style: normal;
         font-display: swap;
       }
       @font-face {
         font-family: 'Maison Neue Extended';
-        src: url('/fonts/MaisonNeueExt-Book.woff2') format('woff2');
+        src: url('./fonts/MaisonNeueExt-Book.woff2') format('woff2');
         font-weight: 400;
         font-style: normal;
         font-display: swap;
       }
       @font-face {
         font-family: 'Maison Neue Extended';
-        src: url('/fonts/MaisonNeueExt-Bold.woff2') format('woff2');
+        src: url('./fonts/MaisonNeueExt-Bold.woff2') format('woff2');
         font-weight: 700;
         font-style: normal;
         font-display: swap;
       }
       @font-face {
         font-family: 'Maison Neue Ext';
-        src: url('/fonts/MaisonNeueExt-Book.woff2') format('woff2');
+        src: url('./fonts/MaisonNeueExt-Book.woff2') format('woff2');
         font-weight: 400;
         font-style: normal;
         font-display: swap;
       }
       @font-face {
         font-family: 'Maison Neue Ext';
-        src: url('/fonts/MaisonNeueExt-Bold.woff2') format('woff2');
+        src: url('./fonts/MaisonNeueExt-Bold.woff2') format('woff2');
         font-weight: 700;
         font-style: normal;
         font-display: swap;
@@ -840,10 +944,10 @@ $$$$$$$$$$                    /////////          �
   }
 </style>
 <script>
-  // 2.0s Global Watchdog Fail-safe
+  // 8.5s Global Watchdog Fail-safe Fallback
   setTimeout(function() {
     if (typeof window.dismissAuraPreloader === 'function') {
-      window.dismissAuraPreloader('html_watchdog_2s');
+      window.dismissAuraPreloader('html_watchdog_8.5s');
     } else {
       var p = document.querySelector('[data-preloader]');
       var mp = document.querySelector('[data-master-preloader]');
@@ -856,7 +960,7 @@ $$$$$$$$$$                    /////////          �
         try { window.lenis.start(); } catch(e) {}
       }
     }
-  }, 2000);
+  }, 8500);
 </script>
 
 </head><body class="body"><canvas id="cursor-canvas" class="reggae-cursor-canvas js-canvas"></canvas><div data-barba="wrapper" class="transition-wrapper"><div class="main-css"><div class="style-css w-embed"><style>
@@ -1382,8 +1486,8 @@ $$$$$$$$$$                    /////////          �
     --arch-h: calc(var(--arch-w) / (560 / 2592));
     --arch-y: 100vh;
 
-    mask-image: linear-gradient(white, white), linear-gradient(white, white), linear-gradient(white, white), url('/images/preloader_arch-l.svg');
-    -webkit-mask-image: linear-gradient(white, white), linear-gradient(white, white), linear-gradient(white, white), url('/images/preloader_arch-l.svg');
+    mask-image: linear-gradient(white, white), linear-gradient(white, white), linear-gradient(white, white), url('./images/preloader_arch-l.svg');
+    -webkit-mask-image: linear-gradient(white, white), linear-gradient(white, white), linear-gradient(white, white), url('./images/preloader_arch-l.svg');
     mask-size:
       max(0px, calc(50% - (var(--arch-w) / 2) + 2px)) 100%,
       calc(var(--arch-w) + 4px) max(0px, calc(var(--arch-y) + 2px)),
@@ -1874,7 +1978,7 @@ $$$$$$$$$$                    /////////          �
 
   <!-- Zenith Apex Diamond (Himalayan Dawn Accent) -->
   <polygon points="60,6 63.5,11 60,16 56.5,11" fill="#D4A853" />
-</svg></div></div></div></div></div><div class="u-48"></div></div></div><div class="flower loc-info" style="position:absolute;left:2vw;top:2vw;width:230px;height:230px;z-index:0;pointer-events:none;"><div class="lotus-cluster" data-cluster="1"><div class="lotus-item" data-speed="0.9" style="left:10%;top:10%;width:88px;height:88px;z-index:3;"><img src="./videos/lotus_white.png" alt="Sacred White Lotus" class="lotus-img" loading="eager"/></div><div class="lotus-item" data-speed="-1.2" style="left:52%;top:5%;width:44px;height:44px;z-index:2;"><img src="./videos/lotus_blue.png" alt="Royal Blue Lotus" class="lotus-img" loading="eager"/></div><div class="lotus-item" data-speed="0.75" style="left:46%;top:48%;width:54px;height:54px;z-index:4;"><img src="./videos/lotus_yellow.png" alt="Golden Water Lily" class="lotus-img" loading="eager"/></div><div class="lotus-item" data-speed="-0.9" style="left:5%;top:52%;width:40px;height:40px;z-index:2;"><img src="./videos/lotus_magenta.png" alt="Sacred Magenta Lotus" class="lotus-img" loading="eager"/></div><div class="lotus-item" data-speed="1.3" style="left:68%;top:55%;width:38px;height:38px;z-index:1;"><img src="./videos/lotus_pink.png" alt="Blush Pink Water Lily" class="lotus-img" loading="eager"/></div></div></div></div><div class="loc-intro-w"><div class="loc-intro-s"><div class="u-48 b-desk"></div><div class="u-160 b-mob"></div><div class="grid _13-columns fill"><div class="loc-intro-s_cap"><h4 data-scroll-reveal="h" class="c1 a-center">India</h4></div><div class="loc-intro-s_title"><h3 data-scroll-reveal="h" class="h1"><span class="loc-intro-s_title_line is-1">Upper </span><span class="loc-intro-s_title_line is-2 mob_a-right">Ridge </span><span class="loc-intro-s_title_line">Sanctuary</span></h3></div><div class="loc-intro-s_img"><div class="u-32 b-mob"></div><div data-scroll-reveal="slide" class="img-w"><img loading="eager" src="./images/06_private_theater.jpg" alt="Aura Crest Residences Exclusive Resident Lounge" sizes="(max-width: 1920px) 100vw, 1920px" srcset="./images/06_private_theater.jpg" class="img"/></div></div><div class="loc-intro-s_desc"><div class="u-32 b-mob"></div><h3 data-scroll-reveal="p" class="h5">Dharamkot Ridge, Himachal Pradesh</h3><div class="u-16"></div><p data-scroll-reveal="p" class="p1">Bordered by deodar trails and peaceful walking circuits, Aura Crest balances quiet mountain solitude with swift road connectivity to Dharamshala. It is built as a retreat to return to year after year.</p><div class="u-96 b-mob"></div></div><div data-scroll-reveal="ctn" class="loc-intro-s_btn"><div hover-btn-circle="" data-magnetic-btn="" hover-nav-item-trigger="" class="btn-circle"><div data-magnetic-inner="" class="btn-circle_label"><a hover-nav-item="" aria-label="View available apartments" data-modal-cta-btn="book-a-call" href="#" class="nav-item w-inline-block"><div class="nav-item_label"><div class="nav-item_label_text"><div hover="text" class="l1">View available apartments</div></div><div class="nav-item_label_text is-2"><div hover="text" class="l1">View available apartments</div></div></div></a></div><div class="btn-circle_bg w-embed"><svg data-circle viewBox="0 0 208 208" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+</svg></div></div></div></div></div><div class="u-48"></div></div></div><div class="flower loc-info" style="position:absolute;left:2vw;top:2vw;width:230px;height:230px;z-index:0;pointer-events:none;"><div class="lotus-cluster" data-cluster="1"><div class="lotus-item" data-speed="0.9" style="left:10%;top:10%;width:88px;height:88px;z-index:3;"><img src="./videos/lotus_white.png" alt="Sacred White Lotus" class="lotus-img" loading="eager"/></div><div class="lotus-item" data-speed="-1.2" style="left:52%;top:5%;width:44px;height:44px;z-index:2;"><img src="./videos/lotus_blue.png" alt="Royal Blue Lotus" class="lotus-img" loading="eager"/></div><div class="lotus-item" data-speed="0.75" style="left:46%;top:48%;width:54px;height:54px;z-index:4;"><img src="./videos/lotus_yellow.png" alt="Golden Water Lily" class="lotus-img" loading="eager"/></div><div class="lotus-item" data-speed="-0.9" style="left:5%;top:52%;width:40px;height:40px;z-index:2;"><img src="./videos/lotus_magenta.png" alt="Sacred Magenta Lotus" class="lotus-img" loading="eager"/></div><div class="lotus-item" data-speed="1.3" style="left:68%;top:55%;width:38px;height:38px;z-index:1;"><img src="./videos/lotus_pink.png" alt="Blush Pink Water Lily" class="lotus-img" loading="eager"/></div></div></div></div><div class="loc-intro-w"><div class="loc-intro-s"><div class="u-48 b-desk"></div><div class="u-160 b-mob"></div><div class="grid _13-columns fill"><div class="loc-intro-s_cap"><h4 data-scroll-reveal="h" class="c1 a-center">Dharamkot, India</h4></div><div class="loc-intro-s_title"><h3 data-scroll-reveal="h" class="h1 a-center"><span class="loc-intro-s_title_line">Upper Ridge Sanctuary</span></h3></div><div class="loc-intro-s_img"><div class="u-32 b-mob"></div><div data-scroll-reveal="slide" class="img-w"><img loading="eager" src="./images/06_private_theater.jpg" alt="Aura Crest Residences Exclusive Resident Lounge" sizes="(max-width: 1920px) 100vw, 1920px" srcset="./images/06_private_theater.jpg" class="img"/></div></div><div class="loc-intro-s_desc"><div class="u-32 b-mob"></div><h3 data-scroll-reveal="p" class="h5">Dharamkot Ridge, Himachal Pradesh</h3><div class="u-16"></div><p data-scroll-reveal="p" class="p1">Bordered by deodar trails and peaceful walking circuits, Aura Crest balances quiet mountain solitude with swift road connectivity to Dharamshala. It is built as a retreat to return to year after year.</p><div class="u-96 b-mob"></div></div><div data-scroll-reveal="ctn" class="loc-intro-s_btn"><div hover-btn-circle="" data-magnetic-btn="" hover-nav-item-trigger="" class="btn-circle"><div data-magnetic-inner="" class="btn-circle_label"><a hover-nav-item="" aria-label="View available apartments" data-modal-cta-btn="book-a-call" href="#" class="nav-item w-inline-block"><div class="nav-item_label"><div class="nav-item_label_text"><div hover="text" class="l1">View available apartments</div></div><div class="nav-item_label_text is-2"><div hover="text" class="l1">View available apartments</div></div></div></a></div><div class="btn-circle_bg w-embed"><svg data-circle viewBox="0 0 208 208" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
   <circle data-arc cx="104" cy="104" r="103.5" stroke="currentColor" stroke-width="1" fill="none" transform="rotate(-150 104 104)" />
   <circle data-arc cx="104" cy="104" r="103.5" stroke="currentColor" stroke-width="1" fill="none" transform="rotate(30 104 104)" />
 

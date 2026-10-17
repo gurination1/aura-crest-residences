@@ -21,7 +21,9 @@ window.dismissAuraPreloader = function(reason) {
     try { masterPreloader.remove(); } catch(e) {}
   }
 
-  if (typeof window.unlockScroll === "function") {
+  if (typeof unlockScroll === "function") {
+    unlockScroll(true);
+  } else if (typeof window.unlockScroll === "function") {
     window.unlockScroll(true);
   } else {
     document.documentElement.style.removeProperty("--scrollbar-width");
@@ -39,19 +41,16 @@ window.dismissAuraPreloader = function(reason) {
 };
 
 function initPreloader(){
-  let e = !1;
-  try { e = sessionStorage.getItem("hasVisited"); } catch(e) {}
   initLenis();
   initCookies();
   initAllParallax();
 
-  // 2.0s Hard Watchdog: guarantees preloader is never trapping or freezing user on mobile/desktop
+  // 8.5s Failsafe Watchdog: guarantees user is never stuck while full 3.8s GSAP animation plays smoothly
   setTimeout(function() {
-    window.dismissAuraPreloader("2.0s_watchdog");
-  }, 2000);
+    window.dismissAuraPreloader("8.5s_fallback_watchdog");
+  }, 8500);
 
-  e ? animatePreloaederShort() : animatePreloaederIntro();
-  try { sessionStorage.setItem("hasVisited", "true"); } catch(e) {}
+  animatePreloaederIntro();
 }
 
 function animatePreloaederIntro(){
@@ -68,7 +67,7 @@ function animatePreloaederIntro(){
         s = e.querySelector(".preloader_bg_decor"),
         l = e.querySelectorAll(".preloader_progress_track"),
         c = document.querySelector(".hero-w_bg_master_img");
-  CustomEase.create("loaderEase","M0,0,C0,0,0.13,0.34,0.238,0.442,0.305,0.506,0.322,0.514,0.396,0.54,0.478,0.568,0.468,0.56,0.522,0.584,0.572,0.606,0.719,0.714,0.826,0.798,0.912,1,1,1,1");
+  CustomEase.create("loaderEase", "0.25, 0.1, 0.25, 1");
   const d = window.innerWidth >= breakPoint ? "24vw" : "40vw",
         u = window.innerWidth >= breakPoint ? "36vw" : "50vw",
         g = window.innerWidth >= breakPoint ? 0.75 : 1.15;

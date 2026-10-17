@@ -1,9 +1,9 @@
 <svg width="1072" height="208" viewBox="0 0 1072 208" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M 60 145 C 130 145, 170 110, 240 110 C 310 110, 360 70, 440 70 C 520 70, 560 115, 640 115 C 720 115, 760 75, 840 75 C 910 75, 960 135, 1020 135" stroke="#3d3732" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-  <path d="M 60 145 C 130 145, 170 110, 240 110 C 310 110, 360 70, 440 70 C 520 70, 560 115, 640 115 C 720 115, 760 75, 840 75 C 910 75, 960 135, 1020 135" stroke="#c4a57b" stroke-width="0.75" stroke-dasharray="3 3" fill="none"/>
+  <path d="M 80 145 C 145 145, 175 110, 240 110 C 310 110, 360 70, 440 70 C 520 70, 560 115, 640 115 C 720 115, 760 75, 840 75 C 905 75, 935 135, 985 135" stroke="#3d3732" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <path d="M 80 145 C 145 145, 175 110, 240 110 C 310 110, 360 70, 440 70 C 520 70, 560 115, 640 115 C 720 115, 760 75, 840 75 C 905 75, 935 135, 985 135" stroke="#c4a57b" stroke-width="0.75" stroke-dasharray="3 3" fill="none"/>
   
   <!-- Milestone markers -->
-  <circle cx="60" cy="145" r="4" fill="#3d3732" stroke="#c4a57b" stroke-width="1.5"/>
+  <circle cx="80" cy="145" r="4" fill="#3d3732" stroke="#c4a57b" stroke-width="1.5"/>
   <circle cx="240" cy="110" r="4" fill="#3d3732" stroke="#c4a57b" stroke-width="1.5"/>
   
   <!-- Flagship Aura Crest marker -->
@@ -12,5 +12,5 @@
   
   <circle cx="640" cy="115" r="4" fill="#3d3732" stroke="#c4a57b" stroke-width="1.5"/>
   <circle cx="840" cy="75" r="4" fill="#3d3732" stroke="#c4a57b" stroke-width="1.5"/>
-  <circle cx="1020" cy="135" r="4" fill="#3d3732" stroke="#c4a57b" stroke-width="1.5"/>
+  <circle cx="985" cy="135" r="4" fill="#3d3732" stroke="#c4a57b" stroke-width="1.5"/>
 </svg>

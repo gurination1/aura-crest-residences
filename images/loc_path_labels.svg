@@ -6,28 +6,30 @@
     .hub-badge { fill: #f3efe9; stroke: #c4a57b; stroke-width: 1; }
   </style>
 
-  <!-- AIIMS Bathinda -->
-  <text x="60" y="172" class="hub-title">AIIMS BATHINDA</text>
-  <text x="60" y="187" class="hub-time">5 MIN</text>
+  <!-- Bhagsunag Waterfall Trail -->
+  <text x="80" y="164" class="hub-title">BHAGSUNAG</text>
+  <text x="80" y="177" class="hub-title">WATERFALL TRAIL</text>
+  <text x="80" y="192" class="hub-time">8 MIN</text>
 
-  <!-- Ring Road -->
-  <text x="240" y="85" class="hub-title">RING ROAD</text>
-  <text x="240" y="99" class="hub-time">2 MIN</text>
+  <!-- McLeod Ganj Main Square -->
+  <text x="240" y="85" class="hub-title">MCLEOD GANJ MAIN SQUARE</text>
+  <text x="240" y="99" class="hub-time">5 MIN</text>
 
   <!-- Aura Crest Flagship -->
-  <rect x="340" y="24" width="200" height="26" rx="4" class="hub-badge" />
+  <rect x="330" y="24" width="220" height="26" rx="4" class="hub-badge" />
   <text x="440" y="41" class="hub-flagship">★ AURA CREST</text>
-  <text x="440" y="56" class="hub-time">GATEWAY</text>
+  <text x="440" y="56" class="hub-time">DHARAMKOT RIDGE</text>
 
-  <!-- City Center Mall -->
-  <text x="640" y="145" class="hub-title">CITY CENTER MALL</text>
-  <text x="640" y="160" class="hub-time">8 MIN</text>
+  <!-- Dharamshala Skyway -->
+  <text x="640" y="145" class="hub-title">DHARAMSHALA SKYWAY</text>
+  <text x="640" y="160" class="hub-time">12 MIN</text>
 
-  <!-- Bathinda Junction -->
-  <text x="840" y="52" class="hub-title">BATHINDA JUNCTION</text>
-  <text x="840" y="66" class="hub-time">10 MIN</text>
+  <!-- Kangra Airport DHM -->
+  <text x="840" y="52" class="hub-title">KANGRA AIRPORT (DHM)</text>
+  <text x="840" y="66" class="hub-time">35 MIN</text>
 
-  <!-- Bathinda Airport -->
-  <text x="1010" y="165" class="hub-title">BATHINDA AIRPORT</text>
-  <text x="1010" y="180" class="hub-time">20 MIN</text>
+  <!-- Pathankot Cantt Junction -->
+  <text x="985" y="164" class="hub-title">PATHANKOT CANTT</text>
+  <text x="985" y="177" class="hub-title">JUNCTION</text>
+  <text x="985" y="192" class="hub-time">2.5 HR</text>
 </svg>
